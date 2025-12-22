@@ -3,7 +3,7 @@
   "displayName": "Game Frame X Builder",
   "category": "Game Framework",
   "description": "独立游戏前后端一体化解决方案 https://gameframex.doc.alianblank.com/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2019.4",
   "keywords": [
     "GameFrameX"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "name": "com.gameframex.npmtest",
-    "url": "https://github.com/gameframex/com.gameframex.npmtest.git",
+    "url": "git+https://github.com/gameframex/com.gameframex.npmtest.git",
     "type": "git"
   },
   "devDependencies": {
