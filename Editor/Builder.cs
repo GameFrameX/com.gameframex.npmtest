@@ -51,6 +51,7 @@ namespace GameFrameX.Builder.Editor
             ObjectStorageUploadManager.SetSavePath($"builder/{PlayerSettings.productName}/{EditorUserBuildSettings.activeBuildTarget.ToString()}/{_builderOptions.JobName}/{Application.version}/{_builderOptions.BuildNumber}");
 #endif
         }
+        
 
         /// <summary>
         /// 参数构建
