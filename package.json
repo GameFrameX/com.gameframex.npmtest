@@ -1,5 +1,5 @@
 {
-  "name": "com.gameframex.unity.builder",
+  "name": "com.gameframex.npmtest",
   "displayName": "Game Frame X Builder",
   "category": "Game Framework",
   "description": "独立游戏前后端一体化解决方案 https://gameframex.doc.alianblank.com/",
@@ -14,8 +14,8 @@
     "url": "https://alianblank.com/"
   },
   "repository": {
-    "name": "com.gameframex.unity.builder",
-    "url": "https://github.com/gameframex/com.gameframex.unity.builder.git",
+    "name": "com.gameframex.npmtest",
+    "url": "https://github.com/gameframex/com.gameframex.npmtest.git",
     "type": "git"
   }
 }
