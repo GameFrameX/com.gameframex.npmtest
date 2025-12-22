@@ -76,6 +76,8 @@ namespace GameFrameX.Builder.Editor
                     _builderOptions.BuildNumber = commandLineArgs[index + 1];
                 }
                 else if (commandLineArg == "-JOB_NAME")
+
+                
                 {
                     _builderOptions.JobName = commandLineArgs[index + 1];
                 }
