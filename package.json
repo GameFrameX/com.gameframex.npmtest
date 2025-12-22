@@ -17,5 +17,10 @@
     "name": "com.gameframex.npmtest",
     "url": "https://github.com/gameframex/com.gameframex.npmtest.git",
     "type": "git"
+  },
+  "devDependencies": {
+    "semantic-release": "^24.2.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1"
   }
 }
