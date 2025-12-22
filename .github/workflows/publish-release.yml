@@ -6,11 +6,29 @@ on:
 
 jobs:
   publish-release:
-    # 引用外部仓库的可重用工作流
-    # 权限由外部工作流统一配置，无需在调用方声明
-    uses: GameFrameX/public-github-actions/.github/workflows/publish-release.yml@main
-    with:
-      # 传递仓库名称
-      repository_name: ${{ github.repository }}
-    # 组织级别已配置密钥，可以使用 inherit 继承所有密钥
-    secrets: inherit
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # 必须获取完整历史用于 Semantic Release 分析
+          persist-credentials: false # 使用 token 进行操作
+      
+      # 解决 git fetch 报错
+      - name: Force fetch tags
+        run: git fetch --tags --force
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run semantic-release
+        run: npx semantic-release
+        env:
+          # NPM发布令牌（存在GitHub Secrets中）
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # GitHub令牌（自动生成，用于创建Tag/Release）
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
