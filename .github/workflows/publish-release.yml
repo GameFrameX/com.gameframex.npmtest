@@ -31,6 +31,7 @@ jobs:
         run: npx semantic-release
         env:
           # NPM发布令牌（存在GitHub Secrets中）
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           # GitHub令牌（自动生成，用于创建Tag/Release）
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
