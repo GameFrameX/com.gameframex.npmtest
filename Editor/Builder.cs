@@ -76,8 +76,6 @@ namespace GameFrameX.Builder.Editor
                     _builderOptions.BuildNumber = commandLineArgs[index + 1];
                 }
                 else if (commandLineArg == "-JOB_NAME")
-
-                
                 {
                     _builderOptions.JobName = commandLineArgs[index + 1];
                 }
@@ -167,8 +165,10 @@ namespace GameFrameX.Builder.Editor
                 _builderOptions.LogFilePath = $"../Logs/{split[split.Length - 1]}_{_builderOptions.BuildNumber}.log";
             }
 
-            Debug.Log("-----------构建参数开始-----------");
+            Debug.Log("-----------构建参数开始-----xxxx------");
+
             Debug.Log(_builderOptions);
+
             Debug.Log("-----------构建参数结束-----------");
             if (!_builderOptions.BundleId.IsNullOrWhiteSpace())
             {
