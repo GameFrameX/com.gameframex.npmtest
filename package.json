@@ -21,7 +21,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://n.cnb.cool/"
+    "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
   },
   "devDependencies": {
     "semantic-release": "^24.2.0",
