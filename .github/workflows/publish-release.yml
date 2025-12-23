@@ -8,7 +8,6 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
-  id-token: write # 必须添加此权限以支持 NPM Trusted Publishing
 
 jobs:
   publish-release:
@@ -39,9 +38,8 @@ jobs:
       - name: Run semantic-release
         run: npx semantic-release
         env:
-          # NPM发布令牌（存在GitHub Secrets中）
-          # 注意：首次发布必须使用 Automation Token，发布成功后可在 NPM 设置 Trusted Publisher
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # cnb.cool 发布令牌
+          NPM_TOKEN: ${{ secrets.CNB_NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.CNB_NPM_TOKEN }}
           # GitHub令牌（自动生成，用于创建Tag/Release）
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
