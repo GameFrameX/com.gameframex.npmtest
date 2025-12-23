@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/gameframex/com.gameframex.npmtest/compare/v1.0.3...v1.0.4) (2025-12-23)
+
+
+### Bug Fixes
+
+* force release for configuration test ([d321663](https://github.com/gameframex/com.gameframex.npmtest/commit/d321663a7bcaf064a57e805e1f8e12c4ec683a0f))
+
 ## [1.0.3](https://github.com/gameframex/com.gameframex.npmtest/compare/v1.0.2...v1.0.3) (2025-12-23)
 
 
