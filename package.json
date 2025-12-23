@@ -20,7 +20,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
   },
   "devDependencies": {
     "semantic-release": "^24.2.0",
