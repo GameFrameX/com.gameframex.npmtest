@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/gameframex/com.gameframex.npmtest/compare/v1.0.6...v1.0.7) (2025-12-23)
+
+
+### Reverts
+
+* Revert "ci: 修改发布工作流触发条件为main分支推送" ([aa8fc42](https://github.com/gameframex/com.gameframex.npmtest/commit/aa8fc42d8d07172ee355ca12325fe164be840fc9))
+
 ## [1.0.6](https://github.com/gameframex/com.gameframex.npmtest/compare/v1.0.5...v1.0.6) (2025-12-23)
 
 
