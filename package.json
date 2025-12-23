@@ -5,6 +5,7 @@
   "description": "独立游戏前后端一体化解决方案 https://gameframex.doc.alianblank.com/",
   "version": "1.0.4",
   "unity": "2019.4",
+  "main": "index.js",
   "keywords": [
     "GameFrameX"
   ],
@@ -20,7 +21,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
+    "registry": "https://n.cnb.cool/"
   },
   "devDependencies": {
     "semantic-release": "^24.2.0",
